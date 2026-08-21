@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import CountUp from "@/components/CountUp";
@@ -30,6 +31,15 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
+        <Image
+          src="/images/hero-interior.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-[0.32]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/70 to-background" />
         <div
           aria-hidden
           className="pointer-events-none absolute -left-40 -top-40 h-[520px] w-[520px] rounded-full opacity-60 blur-3xl"
